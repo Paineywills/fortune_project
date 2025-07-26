@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Interactive Start</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="startPage">
+    <h1>Hello Zeke!</h1>
+    <button id="startBtn">Click Me</button>
+  </div>
+
+  <div id="questionPage" class="hidden">
+    <form id="nameForm">
+    <h1>What is your name?</h1>
+    <input type="text" id="nameInput" placeholder="Enter your name..." />
+    <button id="submitName">Submit</button>
+    </form>
+  </div>
+  
+  <!-- ✨ NEW Section for fortune questions -->
+<div id="fortuneContainer" class="hidden">
+  <form id="questionForm">
+  <h2 id="questionPrompt"></h2>
+  <input type="text" id="userAnswer" />
+  <button type="submit" id="nextQuestion">Next</button>
+  </form>
+</div>
+
+<!-- Story output -->
+<div id="storyOutput" class="hidden">
+  <h2>Your Personalized Fortune:</h2>
+  <p id="storyText"></p>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
